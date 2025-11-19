@@ -1,0 +1,1 @@
+// Inline status AJAX placeholder

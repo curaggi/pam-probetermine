@@ -1,0 +1,391 @@
+/* Medical UI – Frontend Styling for Probe-Termine
+   Colors:
+   - Primary Teal: #00A8A8
+   - Accent Gold:  #F0DFA6
+   - Dark Text:    #073B3A
+   - Background:   #F6F8FA
+*/
+
+.pam-pt-frontend-wrapper {
+    max-width: 720px;
+    margin: 24px auto;
+    padding: 0 12px;
+}
+
+.pam-pt-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px 20px 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border-top: 3px solid #00A8A8;
+}
+
+.pam-pt-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.pam-pt-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #073B3A;
+}
+
+.pam-pt-card-subtitle {
+    font-size: 13px;
+    color: #6c7a89;
+}
+
+.pam-pt-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #F0DFA6;
+    color: #4b3b0a;
+}
+
+/* Form Layout */
+
+.pam-pt-form {
+    margin-top: 8px;
+}
+
+.pam-pt-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 14px 18px;
+}
+
+.pam-pt-field-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pam-pt-field-full {
+    grid-column: 1 / -1;
+}
+
+/* Labels & Inputs */
+
+.pam-pt-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4a5b6b;
+}
+
+.pam-pt-input,
+.pam-pt-select,
+.pam-pt-textarea {
+    border-radius: 10px;
+    border: 1px solid #dde3ea;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #073B3A;
+    background: #fbfdff;
+    transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pam-pt-input:focus,
+.pam-pt-select:focus,
+.pam-pt-textarea:focus {
+    outline: none;
+    border-color: #00A8A8;
+    box-shadow: 0 0 0 1px rgba(0,168,168,0.07), 0 0 0 4px rgba(0,168,168,0.09);
+    background: #ffffff;
+}
+
+.pam-pt-textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Buttons */
+
+.pam-pt-actions {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pam-pt-btn-primary {
+    border-radius: 999px;
+    border: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #00A8A8;
+    color: #ffffff;
+    box-shadow: 0 9px 20px rgba(0,168,168,0.28);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform .08s ease, box-shadow .08s ease, background .15s ease;
+}
+
+.pam-pt-btn-primary:hover {
+    background: #009191;
+    transform: translateY(-1px);
+    box-shadow: 0 11px 26px rgba(0,168,168,0.34);
+}
+
+.pam-pt-btn-secondary {
+    border-radius: 999px;
+    border: 1px solid #dde3ea;
+    padding: 8px 16px;
+    font-size: 13px;
+    background: #f6f8fa;
+    color: #4a5b6b;
+    cursor: pointer;
+    transition: background .12s ease, border-color .12s ease;
+}
+
+.pam-pt-btn-secondary:hover {
+    background: #edf1f6;
+    border-color: #c9d3df;
+}
+
+/* Messages */
+
+.pam-pt-message {
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.pam-pt-message-success {
+    background: #e5f8f5;
+    border: 1px solid #00A8A8;
+    color: #05524f;
+}
+
+.pam-pt-message-error {
+    background: #fdecec;
+    border: 1px solid #f07373;
+    color: #7c1f21;
+}
+
+/* Device List – Variant 2 (List with Icons) */
+
+.pam-pt-device-wrapper {
+    margin-top: 2px;
+}
+
+.pam-pt-device-list-label-row {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:4px;
+}
+
+.pam-pt-device-hint {
+    font-size:11px;
+    color:#9aa7b6;
+}
+
+.pam-pt-device-list {
+    border-radius: 12px;
+    background: #f6f8fa;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pam-pt-device-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background .12s ease, box-shadow .12s ease, transform .06s ease;
+    border: 1px solid transparent;
+}
+
+.pam-pt-device-option-icon-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    min-width: 0;
+}
+
+.pam-pt-device-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#ffffff;
+    color:#00A8A8;
+    font-size:14px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.09);
+}
+
+.pam-pt-device-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #073B3A;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pam-pt-device-meta {
+    font-size: 11px;
+    color: #9aa7b6;
+}
+
+.pam-pt-device-check {
+    font-size: 13px;
+    color: #00A8A8;
+    opacity: 0;
+    transform: translateX(4px);
+    transition: opacity .12s ease, transform .12s ease;
+}
+
+/* States */
+
+.pam-pt-device-option:hover {
+    background: #ffffff;
+    border-color: #dde3ea;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.06);
+    transform: translateY(-1px);
+}
+
+.pam-pt-device-option.is-active {
+    background: #ffffff;
+    border-color: #00A8A8;
+    box-shadow: 0 7px 18px rgba(0,168,168,0.18);
+}
+
+.pam-pt-device-option.is-active .pam-pt-device-check {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Hide original select but keep it accessible */
+
+.pam-pt-device-select-hidden {
+    position: absolute !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    height: 0;
+    width: 0;
+}
+
+/* Small screen adjustments */
+
+@media (max-width: 600px) {
+    .pam-pt-card {
+        padding: 16px 14px 18px;
+        border-radius: 14px;
+    }
+    .pam-pt-form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Table search UI for [probe_search] */
+
+.pam-pt-search-wrapper {
+    max-width: 720px;
+    margin: 24px auto;
+    padding: 0 12px;
+}
+
+.pam-pt-search-card {
+    background:#fff;
+    border-radius:14px;
+    padding:16px 18px 20px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.05);
+    border-left:3px solid #00A8A8;
+}
+
+.pam-pt-search-title{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#073B3A;
+}
+
+.pam-pt-search-input-row{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-bottom:12px;
+}
+
+.pam-pt-search-input-row input[type=text]{
+    flex:1;
+}
+
+.pam-pt-search-results{
+    margin-top:10px;
+    font-size:13px;
+}
+
+.pam-pt-search-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:6px;
+}
+
+.pam-pt-search-table th,
+.pam-pt-search-table td{
+    padding:6px 8px;
+    border-bottom:1px solid #edf1f6;
+}
+
+.pam-pt-search-table th{
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    color:#8a9bab;
+    background:#f6f8fa;
+}
+
+/* Simple status chips */
+
+.pam-pt-status-chip{
+    display:inline-flex;
+    align-items:center;
+    padding:2px 8px;
+    border-radius:999px;
+    font-size:11px;
+    font-weight:500;
+}
+
+.pam-pt-status-offen{
+    background:#edf1f6;
+    color:#5b6b7b;
+}
+.pam-pt-status-interesse{
+    background:#e1f2ff;
+    color:#1a6ba8;
+}
+.pam-pt-status-gebucht{
+    background:#e5f8f5;
+    color:#0a6a56;
+}
+.pam-pt-status-kein_interesse{
+    background:#fdecec;
+    color:#a12d30;
+}

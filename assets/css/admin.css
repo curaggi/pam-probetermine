@@ -1,0 +1,14 @@
+.pam-pt-wrap{max-width:1200px;}
+.pam-pt-kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:24px;}
+.pam-pt-card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 4px 10px rgba(0,0,0,.04);border-top:3px solid #00A8A8;}
+.pam-pt-card-label{font-size:12px;text-transform:uppercase;color:#666;margin-bottom:4px;}
+.pam-pt-card-value{font-size:22px;font-weight:600;color:#00A8A8;}
+.pam-pt-table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;}
+.pam-pt-table th,.pam-pt-table td{padding:8px 10px;border-bottom:1px solid #eee;font-size:13px;}
+.pam-pt-table th{background:#f5f8fa;text-align:left;}
+
+.pam-pt-two-col{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1.8fr);gap:24px;margin-top:20px;}
+.pam-pt-col{background:#fff;border-radius:12px;padding:16px;box-shadow:0 4px 10px rgba(0,0,0,.03);}
+.pam-pt-filter-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:12px 0;}
+.pam-pt-filter-actions{display:flex;align-items:flex-end;}
+.pam-pt-chart-card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 4px 10px rgba(0,0,0,.04);margin-top:24px;}
